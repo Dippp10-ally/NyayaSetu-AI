@@ -205,3 +205,221 @@ html, body, #root {
   transform: translateY(0);
   transition: opacity 300ms, transform 300ms;
 }
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+/* Large Tablets */
+@media (max-width: 1024px) {
+  .chat-bubble-user,
+  .chat-bubble-ai {
+    max-width: 90%;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.75rem 1.25rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .section-label {
+    font-size: 0.65rem;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+    padding: 0.875rem 1rem;
+  }
+
+  .input-field {
+    padding: 0.875rem 1rem;
+  }
+
+  .chat-bubble-user,
+  .chat-bubble-ai {
+    max-width: 95%;
+    font-size: 0.9rem;
+    padding: 0.875rem;
+  }
+
+  .prose-ai h1 {
+    font-size: 1rem;
+  }
+
+  .prose-ai h2 {
+    font-size: 0.95rem;
+  }
+
+  .prose-ai h3 {
+    font-size: 0.9rem;
+  }
+
+  .prose-ai pre {
+    padding: 0.875rem;
+    font-size: 0.8rem;
+  }
+
+  .glass {
+    backdrop-filter: blur(10px);
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .gold-gradient {
+    word-break: break-word;
+  }
+
+  .section-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.05em;
+  }
+
+  .chat-bubble-user,
+  .chat-bubble-ai {
+    max-width: 100%;
+    padding: 0.75rem;
+    border-radius: 1rem;
+  }
+
+  .prose-ai {
+    font-size: 0.9rem;
+  }
+
+  .prose-ai ul,
+  .prose-ai ol {
+    padding-left: 1.25rem;
+  }
+
+  .prose-ai pre {
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+  }
+
+  .prose-ai table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .input-field {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    min-height: 48px;
+    border-radius: 0.875rem;
+  }
+
+  .chat-bubble-user,
+  .chat-bubble-ai {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .prose-ai h1 {
+    font-size: 0.95rem;
+  }
+
+  .prose-ai h2 {
+    font-size: 0.9rem;
+  }
+
+  .prose-ai h3 {
+    font-size: 0.85rem;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .section-label {
+    font-size: 0.55rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.75rem;
+  }
+
+  .chat-bubble-user,
+  .chat-bubble-ai {
+    padding: 0.65rem;
+  }
+}
+
+/* Utility Responsive Classes */
+.responsive-container {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 640px) {
+  .responsive-container {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-container {
+    padding-inline: 2rem;
+  }
+}
+
+/* Prevent Overflow Issues */
+img,
+svg,
+video,
+canvas,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Better Touch Targets */
+button,
+a,
+input,
+textarea,
+select {
+  touch-action: manipulation;
+}
+
+/* Smooth Mobile Scrolling */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
